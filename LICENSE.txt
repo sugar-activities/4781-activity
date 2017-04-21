@@ -1,0 +1,10 @@
+
+License for the Sun JRE:
+	See the following files:
+		jre/LICENSE
+		jre/COPYRIGHT
+
+All the code outside the "jre" folder is GPLv3.
+
+The CeibalJAM logo is property of CeibalJAM (http://ceibaljam.org(
+

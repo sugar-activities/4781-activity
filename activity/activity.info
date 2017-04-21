@@ -1,0 +1,9 @@
+[Activity]
+name = Java
+activity_version = 3
+bundle_id = org.ceibaljam.java_64
+show_launcher = yes
+icon = jre-sugar-icon
+exec = sugar-activity activity.JreActivity
+license = See the LICENSE file
+summary = Sugarized Java JRE

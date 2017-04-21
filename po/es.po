@@ -1,0 +1,48 @@
+# Translation for the sugarization of the Java Runtime Environment
+# Copyright (C) 2010 Marcos Orfila
+# This file is distributed under the same license as the containing package.
+# Marcos Orfila <www.marcosorfila.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: support@marcosorfila.com\n"
+"POT-Creation-Date: 2010-02-27 19:25+0000\n"
+"PO-Revision-Date: 2010-03-02 04:10+0000\n"
+"Last-Translator:  <support@marcosorfila.com>\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: activity/activity.info:2
+msgid "Java"
+msgstr "Java"
+
+#: activity.py:67
+msgid "Java Runtime Environment"
+msgstr "Entorno de ejecución de Java (JRE)"
+
+#: activity.py:70
+msgid "Copyright © 2010 Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,"
+msgstr "Copyright © 2010 Sun Microsystems, Inc., 4150 Network Circle, Santa Clara,"
+
+#: activity.py:71
+msgid "California 95054, U.S.A.  All rights reserved."
+msgstr "California 95054, U.S.A.  Todos los derechos reservados."
+
+#: activity.py:103
+msgid "To use this JRE in your activity, add the following line to your script:"
+msgstr "Para utilizar esta JRE en tu actividad, agrega la siguiente línea a tu script:"
+
+#: activity.py:117
+#, python-format
+msgid "Sugarized by %(THE_AUTHOR)s"
+msgstr "Portado a Sugar por %(THE_AUTHOR)s"
+
+#: activity.py:127
+#, python-format
+msgid "Find more activities on %(CEIBALJAM)s website:"
+msgstr "Visita el sitio de %(CEIBALJAM)s para descargar más actividades:"
+

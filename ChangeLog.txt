@@ -1,0 +1,18 @@
+
+  Java Runtime Environment for Sugar ChangeLog
+ ==============================================
+
+2010-03-13 (version 2):
+	* The PATH variable shown when executing the activity was wrong
+	* The JRE path was changed from "jre.6.0_18" to "jre". This aims to
+	  simpliy external references from other activities.
+	* LICENSE.txt file was added
+
+2010-03-02 (version 1):
+	* Based on JRE 1.6.0_18
+
+
+-------------------------------------------------------------------------------
+Author:        Marcos Orfila  -  http://www.marcosorfila.com
+Last modified: Mar 13th, 2010
+

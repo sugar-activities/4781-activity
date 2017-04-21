@@ -1,0 +1,85 @@
+
+  Sugarizing the Java Runtime Environment (JRE)
+ ===============================================
+
+Build platform: Sugar 0.82.1 + Fedora 9
+
+
+1) Download the JRE
+
+$ BASEDIR="$HOME/Activities/JRE.activity"
+$ mkdir $BASEDIR
+$ cd $BASEDIR
+$ wget \
+  --no-check-certificate \
+  --output-document='jre-linux.bin' \
+  http://javadl.sun.com/webapps/download/AutoDL?BundleId=37391
+
+If the link is not correct anymore, go to the Java download page:
+  http://java.com/en/download/manual.jsp
+and dowload the "Linux (self-extracting file)" link.
+
+
+2) Unpack the JRE
+
+$ chmod 755 jre-linux.bin
+$ sh jre-linux.bin
+
+Read the license and accept it to continue (scroll as in the "more" command).
+The JRE will be unpacked into a directory with the name of the JRE version.
+In the example, the directory name is "jre1.6.0_18"
+
+After checking that the unpacking process is complete, erase the package:
+$ /bin/rm jre-linux.bin
+
+Rename the JRE folder:
+$ mv jre1.6.0_18 jre
+
+
+3) Add Python code to show something when the activity is run
+
+File "activity.py" has some code to show information to the user.
+The "images" folder contains images shown by the Python code.
+
+
+4) Internationalization (i18n)
+
+Reference for this section:
+http://wiki.laptop.org/go/Python_i18n
+
+
+cd $HOME/Activities/Java.activity
+# Create the local directories
+mkdir -p locale/es/LC_MESSAGES
+# Create the "po/Java.pot" file:
+./setup.py genpot
+# Complete the first lines of the "po/Java.pot" file with the version
+# information, your e-mail, etc.
+# Initialize a translation file for a given language (e.g. Spanish):
+cd po
+msginit -o es.po -l es
+# The former command creates file "es.po", which should contain the Spanish
+# translation. You may see some errors about a "team-address" file not found,
+# but the translation file is created anyway.
+
+Modify the "es.po" file to add the Spanish translations.
+The command that builds the Sugar bundle will also create a "locale" folder
+in the bundle folder containing the binary maps of the translations.
+
+
+5) The sugarization process required to add the following components:
+
+* "activity" folder (info, icon)
+* "setup.py" script (to build the Sugar bundle)
+
+
+6) Create the Sugar bundle
+
+$ ./setup.py dist_xo
+
+
+
+-----------------------------------------------------------------------------
+Author:        Marcos Orfila  -  http://www.marcosorfila.com
+Last modified: Mar 13th, 2010
+
